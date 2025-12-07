@@ -204,11 +204,52 @@ body {
     width: 100%;
     left: 0;
     transform: translateX(0) !important;
+    opacity: 0;
+    z-index: 1;
   }
-  .sign-up .sign-in {
-    width: 100%;
-    opacity: 1 !important;
-    z-index: 5 !important;
-    transform: translateX(0) !important;
+  .form-container.sign-in {
+    opacity: 1;
+    z-index: 5;
+  }
+  .container.active .form-container.sign-in {
+    opacity: 0;
+    z-index: 1;
+  }
+  .container.active .form-container.sign-up {
+    opacity: 1;
+    z-index: 5;
+  }
+  
+  .mobile-toggle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .mobile-toggle button {
+    background-color: #512da8;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .mobile-toggle button.active {
+    background-color: #512da8;
+  }
+  
+  .mobile-toggle button:not(.active) {
+    background-color: #ccc;
+    color: #333;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-toggle {
+    display: none;
   }
 }

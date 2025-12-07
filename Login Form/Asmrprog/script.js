@@ -7,3 +7,13 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove('active');
 });
+mobileSignUp.addEventListener('click', () => {
+    container.classList.add('active');
+    mobileSignUp.classList.add('active');
+    mobileSignIn.classList.remove('active');
+});
+mobileSignIn.addEventListener('click', () => {
+    container.classList.remove('active');
+    mobileSignIn.classList.add('active');
+    mobileSignUp.classList.remove('active');
+});
