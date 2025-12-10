@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="website.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <i class='bx  bx-x'></i> 
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class='bx  bx-menu'></i> 
+        </nav>
+
+        <div class="text-box">
+            <h1>World Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+    </section>
+
+    <script>
+        const navLinks = document.querySelector(".nav-links");
+        const menuIcon = document.querySelector(".bx-menu");
+        const closeIcon = document.querySelector(".bx-x");
+
+        menuIcon.addEventListener("click", () => {
+            navLinks.style.right = "0";
+        });
+
+        closeIcon.addEventListener("click", () => {
+            navLinks.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>
